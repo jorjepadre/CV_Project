@@ -33,9 +33,24 @@ class ofApp : public ofBaseApp{
     Mat webcamGrabberFrameMatGray;
     Mat webcamGrabberFrameMatEdge;
     
-    vector<Vec3f> circles;
+//    vector<Vec3f> circles;
     
     ofxPanel gui;
     ofxIntSlider lowThresholdEdge;
-		
+    
+    // ofxOpenCV by Book
+    ofxCvContourFinder contourFinder;
+    ofxCvColorImage colorImg;
+    ofVideoGrabber vidGrabber;
+    
+    ofxCvGrayscaleImage grayImage;
+    ofxCvGrayscaleImage grayBg;
+    ofxCvGrayscaleImage grayDiff;
+    
+    int threshold;
+    bool learnBackground;
+    
+    int xVal = 640;
+    int yVal = 480;
+    
 };

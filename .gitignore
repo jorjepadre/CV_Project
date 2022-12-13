@@ -1,5 +1,6 @@
 .xcuserstate
 CV_Project.xcodeproj/project.xcworkspace/xcuserdata/
+.DS_Store
 
 # Prerequisites
 *.d
